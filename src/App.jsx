@@ -1,7 +1,25 @@
+import { Link, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./fonts.css";
+import RoverAPI from "./components/RoverAPI/RoverAPI";
 
 function App() {
-  return <h1>Homepage</h1>;
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<img />} />
+        <Route path="/rovers" element={<RoverAPI></RoverAPI>} />
+      </Routes>
+      {/* <ul>
+        <li>
+          <Link to="/">Model</Link>
+        </li>
+        <li>
+          <Link to="/rovers">Rovers</Link>
+        </li>
+      </ul> */}
+    </>
+  );
 }
 
 export default App;

@@ -1,0 +1,14 @@
+.card-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  height: 80vh;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.card-form-label {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

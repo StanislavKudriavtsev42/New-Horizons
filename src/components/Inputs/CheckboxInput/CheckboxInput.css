@@ -1,0 +1,12 @@
+.checkbox-text {
+  width: fit-content;
+}
+
+.checkbox-input-wrapper {
+  display: flex;
+  margin: 5px 10px 10px 10px;
+}
+
+.checkbox-input-wrapper:last-child {
+  grid-column: span 2;
+}

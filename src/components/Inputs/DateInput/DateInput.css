@@ -1,0 +1,13 @@
+.date-input-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 40px;
+}
+
+.date-input-label {
+  width: 20%;
+}
+
+.date-input {
+  height: fit-content;
+}
