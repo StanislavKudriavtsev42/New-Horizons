@@ -7,15 +7,10 @@ import DateInput from "../Inputs/DateInput/DateInput";
 import SubmitButton from "../Inputs/SubmitButton/SubmitButton";
 
 function RoverAPI() {
-  const cardWidth = 450;
-  const cardHeight = 250;
   return (
     <>
       <Banner
         imageSource={"public/images/mars.png"}
-        bannerHeight={500}
-        headerFontSize={72}
-        subheaderFontSize={22}
         headerText={"Mars Rover Photo API"}
         subheaderText={
           "Discover the fascinating world of Mars through rover photos from prominent NASA missions"
@@ -24,29 +19,21 @@ function RoverAPI() {
       <CardForm className="card-form" labelText="Select mission">
         <CardSelect
           cardClass={"card-left"}
-          imageWidth={cardWidth}
-          imageHeight={cardHeight}
           source={"public/images/spirit.jpg"}
           cardLabel="Spirit"
         />
         <CardSelect
           cardClass={"card-right"}
-          imageWidth={cardWidth}
-          imageHeight={cardHeight}
           source={"public/images/opportunity.jpg"}
           cardLabel="Opportunity"
         />
         <CardSelect
           cardClass={"card-left"}
-          imageWidth={cardWidth}
-          imageHeight={cardHeight}
           source={"public/images/curiosity.jpg"}
           cardLabel="Curiosity"
         />
         <CardSelect
           cardClass={"card-right"}
-          imageWidth={cardWidth}
-          imageHeight={cardHeight}
           source={"public/images/preseverance.jpg"}
           cardLabel="Preseverance"
         />
@@ -65,11 +52,12 @@ function RoverAPI() {
         />
       </LabeledForm>
       <LabeledForm labelText={"Photo date"}>
-        <DateInput labelText="Martian Sol" inputWidth={200} />
-        <DateInput labelText="Earth Date" inputWidth={200} />
+        <DateInput labelText="Martian Sol" />
+        <DateInput labelText="Earth Date" />
       </LabeledForm>
-      <SubmitButton buttonText={"Search"} fontSize={24} />
+      <SubmitButton buttonText={"Search"} />
       <div style={{ height: 100 }}></div>
+      {/* TODO: remove div*/}
     </>
   );
 }

@@ -1,14 +1,9 @@
 import "./CardSelect.css";
 
-function CardSelect({ imageWidth, imageHeight, source, cardLabel, cardClass }) {
-  const imageStyles = {
-    width: imageWidth,
-    height: imageHeight,
-  };
-
+function CardSelect({ source, cardLabel, cardClass }) {
   return (
     <div className={cardClass}>
-      <img className="card-image" src={source} style={imageStyles} />
+      <img className="card-image" src={source} />
       <p class="card-label">{cardLabel}</p>
     </div>
   );

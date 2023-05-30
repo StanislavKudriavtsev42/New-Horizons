@@ -1,32 +1,12 @@
 import "./Banner.css";
 
-function Banner({
-  bannerHeight,
-  imageSource,
-  headerFontSize,
-  subheaderFontSize,
-  headerText,
-  subheaderText,
-}) {
-  const bannerStyles = {
-    height: bannerHeight,
-  };
-  const headerStyles = {
-    fontSize: headerFontSize,
-  };
-  const subheaderStyles = {
-    fontSize: subheaderFontSize,
-  };
+function Banner({ imageSource, headerText, subheaderText }) {
   return (
-    <div className="banner-wrapper" style={bannerStyles}>
+    <div className="banner-wrapper">
       <img className="banner-image" src={imageSource} />
       <div className="text-wrapper">
-        <h1 className="banner-header" style={headerStyles}>
-          {headerText}
-        </h1>
-        <p className="banner-subheader" style={subheaderStyles}>
-          {subheaderText}
-        </p>
+        <h1 className="banner-header">{headerText}</h1>
+        <p className="banner-subheader">{subheaderText}</p>
       </div>
     </div>
   );
