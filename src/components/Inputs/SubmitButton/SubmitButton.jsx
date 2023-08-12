@@ -1,12 +1,9 @@
 import "./SubmitButton.css";
 
-function SubmitButton({ buttonText, fontSize }) {
-  const buttonStyles = {
-    fontSize: fontSize,
-  };
+function SubmitButton({ buttonText }) {
   return (
     <div className="submit-button-wrapper">
-      <button className="submit-button" style={buttonStyles}>
+      <button className="submit-button">
         {buttonText}
       </button>
     </div>

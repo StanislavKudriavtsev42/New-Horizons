@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<img />} />
-        <Route path="/rovers" element={<RoverAPI></RoverAPI>} />
+        {/*<Route path="/" element={<img />} />*/}
+        <Route path="/" element={<RoverAPI></RoverAPI>} />
       </Routes>
       {/* <ul>
         <li>

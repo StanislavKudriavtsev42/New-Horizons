@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-  height: 80vh;
-  margin: 0 auto;
+  height: auto;
+  margin: 1rem auto;
   align-content: center;
 }
 

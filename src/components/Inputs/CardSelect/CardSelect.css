@@ -1,9 +1,13 @@
 .card-image {
   object-fit: cover;
   margin: 5px;
-  filter: brightness(35%);
+  filter: grayscale(100%) brightness(35%);
   width: 450px;
   height: 250px;
+}
+
+.selected {
+  filter: grayscale(0%) brightness(70%);
 }
 
 .card-left,
@@ -12,9 +16,9 @@
   width: fit-content;
 }
 
-.card-left:hover img,
-.card-right:hover img {
-  filter: brightness(50%);
+.card-left:hover img:not(.selected),
+.card-right:hover img:not(.selected) {
+  filter: grayscale(80%) brightness(55%);
 }
 
 .card-left {

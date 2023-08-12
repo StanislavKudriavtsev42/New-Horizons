@@ -1,10 +1,22 @@
+import { useState } from "react";
 import "./CardSelect.css";
 
-function CardSelect({ source, cardLabel, cardClass }) {
+function CardSelect({ id, source, cardLabel, cardClass, handleSelect }) {
+  let [selected, setSelected] = useState(false);
+
+  function onSelect() {
+    setSelected(!selected);
+    console.log(selected);
+    handleSelect(id);
+  }
+
   return (
-    <div className={cardClass}>
-      <img className="card-image" src={source} />
-      <p class="card-label">{cardLabel}</p>
+    <div className={cardClass} onClick={onSelect}>
+      <img
+        className={`card-image ${selected ? "selected" : ""}`}
+        src={source}
+      />
+      <p className="card-label">{cardLabel}</p>
     </div>
   );
 }
