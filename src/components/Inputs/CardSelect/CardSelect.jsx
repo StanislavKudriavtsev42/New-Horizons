@@ -6,7 +6,6 @@ function CardSelect({ id, source, cardLabel, cardClass, handleSelect }) {
 
   function onSelect() {
     setSelected(!selected);
-    console.log(selected);
     handleSelect(id);
   }
 

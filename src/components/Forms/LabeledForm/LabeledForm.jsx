@@ -7,7 +7,7 @@ function LabeledForm(props) {
       <div className="label-wrapper">
         <Label labelText={props.labelText} />
       </div>
-      <div className="checkbox-form-wrapper">{props.children}</div>
+      <div className="input-wrapper">{props.children}</div>
     </div>
   );
 }

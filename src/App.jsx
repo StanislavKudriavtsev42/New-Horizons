@@ -1,7 +1,7 @@
 import { Link, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./fonts.css";
-import RoverAPI from "./components/RoverAPI/RoverAPI";
+import RoverAPI from "./components/RoverAPI/RoverAPIContainer.jsx";
 
 function App() {
   return (

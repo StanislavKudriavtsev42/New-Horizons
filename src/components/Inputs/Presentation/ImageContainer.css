@@ -1,0 +1,11 @@
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.rover-image {
+  padding: 30px 0 30px 30px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
+}
