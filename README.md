@@ -1,2 +1,2 @@
 # New-Horizons
-Interactive 3D map of the Solar System that allows users to explore the secrets of our cosmic neighbours and fascinating missions undertaken to study them.
+Explore the wonders of the cosmos with the NASA API explorer New Horizons! This project offers a web application that uses NASA's Open APIs to display information about various agency missions in a user-friendly way.
